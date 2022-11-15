@@ -11,7 +11,7 @@ Options = {
 
 Citizen.CreateThread(function()
     while true do 
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         sleep = true
 		local playerPed = PlayerPedId()
 		local coords = GetEntityCoords(playerPed)
@@ -55,7 +55,7 @@ Citizen.CreateThread(function()
             end
         end
         if sleep then
-            Citizen.Wait(150)
+            Citizen.Wait(1000)
         end
     end
 end)
